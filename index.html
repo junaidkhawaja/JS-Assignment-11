@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Class 28: Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body onload="nextQuestion()">
+    
+    <h1>Quiz App</h1>
+
+    <div id="timer">02:00</div>
+    <div id="question-container">
+        <div id="number"></div>
+        <h4 id="question"></h4>
+        <div class="optionSet">
+        <input id="opti1" onclick="clicked()" type="radio" name="options" value="1">
+        <label for="opti1" id="opt1"></label><br />
+        </div>
+        <div class="optionSet">
+        <input id="opti2" onclick="clicked()" type="radio" name="options" value="2">
+        <label for="opti2" id="opt2"></label><br />
+        </div>
+        <div class="optionSet">
+        <input id="opti3" onclick="clicked()" type="radio" name="options" value="3">
+        <label for="opti3" id="opt3"></label><br />
+        </div>
+        <div class="optionSet">
+        <input id="opti4" onclick="clicked()" type="radio" name="options" value="4">
+        <label for="opti4" id="opt4"></label><br />
+        </div>
+        <br><br>
+        <button disabled id="nextQuestion" onclick="nextQuestion()">Next</button>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
